@@ -5,11 +5,17 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid tomato;
 }
 body {
   color: $primary-text-color;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .header-line {
   background-color: $primary-white-color;
