@@ -2,10 +2,20 @@
   @extend %container;
 }
 .team.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-bottom: 0;
   background-color: $secondary-backgound;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team {
   &__text {
@@ -31,8 +41,11 @@
     }
   }
   &__about {
-    padding: 30px;
+    padding-bottom: 24px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+    }
   }
   &__scroll {
     flex-basis: 100%;
@@ -52,12 +65,7 @@
     }
   }
   &__item:not(:last-child) {
-    @media screen and (min-width: 480px) {
-      margin-bottom: 30px;
-    }
-    @media screen and (min-width: 768px) {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
       margin-bottom: 0;
     }
