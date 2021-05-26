@@ -52,9 +52,19 @@ $secondary-backgound: #f5f4fa;
   border: none;
 }
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
   justify-content: center;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 %section__title {
   margin-top: 0;

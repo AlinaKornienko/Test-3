@@ -56,9 +56,28 @@
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
   justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
@@ -295,6 +314,30 @@ svg {
 
 .skills {
   display: flex;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .skills {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills {
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .skills__title {
@@ -315,14 +358,39 @@ svg {
 }
 
 .skills__item {
-  width: 270px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills__item {
+    flex-basis: calc((100% - 2 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills__item {
+    flex-basis: calc((100% - 4 * 15px) / 4);
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .skills__item:nth-last-child(-n + 1) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 .skills__img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
@@ -331,10 +399,6 @@ svg {
 
 .skills__svg {
   color: #212121;
-}
-
-.skills__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .employments-section {
@@ -383,27 +447,6 @@ svg {
 .team.section {
   margin-bottom: 0;
   background-color: #f5f4fa;
-}
-
-@media screen and (min-width: 480px) {
-  .team.section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team.section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .team__text {
@@ -541,27 +584,6 @@ svg {
 
 .social-icons__link .social-icons__svg {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px) {
-  .our-clients.section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .our-clients.section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .our-clients.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .our-clients {
