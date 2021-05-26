@@ -17,6 +17,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .header-line {
   background-color: $primary-white-color;
 }
