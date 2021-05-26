@@ -544,27 +544,20 @@ svg {
   justify-content: space-between;
 }
 
-.our-clients____item {
-  width: 170px;
-  height: 92px;
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 480px) {
-  .our-clients____item {
+  .our-clients {
     flex-basis: calc((100% - 2 * 15px) / 2);
-    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .our-clients____item {
+  .our-clients {
     flex-basis: calc((100% - 3 * 15px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .our-clients____item {
+  .our-clients {
     flex-basis: calc((100% - 6 * 15px) / 6);
   }
 }
