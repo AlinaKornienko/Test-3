@@ -5,10 +5,9 @@
   flex-basis: 100%;
   align-items: center;
   justify-content: space-between;
-  &__item {
+  &____item {
     width: 170px;
     height: 92px;
-    margin-bottom: 30px;
     @media screen and (min-width: 480px) {
       flex-basis: calc((100% - 2 * 15px) / 2);
     }
@@ -51,7 +50,6 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
 .our-clients__position:hover .our-clients__svg,
 .our-clients__position:focus .our-clients__svg {
   fill: rgba(33, 150, 243, 1);
