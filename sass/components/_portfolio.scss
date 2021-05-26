@@ -112,10 +112,17 @@
   &__filter {
     @extend %list;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    // margin-bottom: 15px;
+    // margin-right: 8px;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
+}
+.list-title {
+  margin-bottom: 15px;
+  margin-right: 8px;
 }
 .box {
   display: block;

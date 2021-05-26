@@ -1008,9 +1008,14 @@ svg {
 
 .portfolio__filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
-  margin-bottom: 50px;
+}
+
+.list-title {
+  margin-bottom: 15px;
+  margin-right: 8px;
 }
 
 .box {
