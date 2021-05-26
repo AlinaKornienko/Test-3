@@ -547,6 +547,7 @@ svg {
 .our-clients____item {
   width: 170px;
   height: 92px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -565,6 +566,10 @@ svg {
   .our-clients____item {
     flex-basis: calc((100% - 6 * 15px) / 6);
   }
+}
+
+.our-clients__item {
+  margin-bottom: 30px;
 }
 
 .our-clients__position {
