@@ -1365,4 +1365,12 @@ svg {
 .button-close:focus .button-close__svg {
   fill: #2196f3;
 }
+
+.mobile-menu__btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
 /*# sourceMappingURL=main.css.map */
