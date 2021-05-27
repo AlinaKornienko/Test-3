@@ -13,7 +13,8 @@
         "components/_clients.scss",
         "components/_footer.scss",
         "components/_portfolio.scss",
-        "components/_modal.scss"
+        "components/_modal.scss",
+        "components/_mobile-menu.scss"
     ],
     "names": [],
     "file": "main.css"
