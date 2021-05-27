@@ -1417,7 +1417,7 @@ svg {
   fill: #2196f3;
 }
 
-.mobile-menu {
+.mobile.container {
   position: fixed;
   top: 0;
   left: 100%;
@@ -1428,7 +1428,7 @@ svg {
   z-index: 99;
 }
 
-.mobile-menu.is-open {
+.mobile.container.is-open {
   left: 0;
 }
 
@@ -1518,5 +1518,17 @@ svg {
 
 .menu-btn__icon {
   fill: #000;
+}
+
+.is-open .menu-btn__icon-open {
+  display: none;
+}
+
+.menu-btn__icon-close {
+  display: none;
+}
+
+.is-open .menu-btn__icon-close {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
