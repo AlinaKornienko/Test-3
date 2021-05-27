@@ -986,7 +986,6 @@ svg {
 
 .portfolio__item {
   position: relative;
-  margin-bottom: 30px;
   overflow: hidden;
 }
 
@@ -1012,9 +1011,21 @@ svg {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .portfolio__item:nth-child(-n + 3) {
+  .portfolio__item:not(:last-child) {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__item:nth-child(-n + 6) {
+    margin-bottom: 30px;
   }
 }
 
