@@ -154,8 +154,13 @@ svg {
   .site-nav {
     display: flex;
     justify-content: flex-start;
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
     margin-left: 93px;
-    margin-right: 33px;
   }
 }
 
@@ -207,6 +212,13 @@ svg {
 
 @media screen and (min-width: 768px) {
   .contacts {
+    display: block;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
     display: flex;
     justify-content: flex-end;
   }
@@ -235,7 +247,13 @@ svg {
 }
 
 .contacts-address:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-address:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-address__icon {
@@ -1481,6 +1499,10 @@ svg {
   .mobile-menu__btn {
     display: none;
   }
+}
+
+.mobile-menu__list.mobile-menu__link.current {
+  color: #2196f3;
 }
 
 .menu-btn__icon {

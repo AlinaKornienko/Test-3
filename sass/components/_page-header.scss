@@ -46,8 +46,10 @@ svg {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-start;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
-    margin-right: 33px;
   }
 }
 .site-nav .site-nav__item:not(:last-child) {
@@ -92,6 +94,10 @@ svg {
   @extend %list;
   display: none;
   @media screen and (min-width: 768px) {
+    display: block;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: flex-end;
   }
@@ -117,7 +123,10 @@ svg {
   }
 }
 .contacts-address:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 .contacts-address__icon {
   width: 16px;
