@@ -37,8 +37,11 @@ svg {
 }
 .main-nav {
   @extend %container;
-  display: flex;
-  justify-content: flex-start;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 .site-nav {
   @extend %list;

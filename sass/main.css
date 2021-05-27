@@ -142,8 +142,14 @@ svg {
 }
 
 .main-nav {
-  display: flex;
-  justify-content: flex-start;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .site-nav {
@@ -402,8 +408,15 @@ svg {
 }
 
 .employments-section {
-  padding-top: 0;
-  padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .employments-section {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
 }
 
 .employments__tasks {
@@ -1372,5 +1385,12 @@ svg {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
