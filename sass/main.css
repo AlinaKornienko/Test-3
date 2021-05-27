@@ -142,20 +142,21 @@ svg {
 }
 
 .main-nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.site-nav {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .main-nav {
+  .site-nav {
     display: flex;
     justify-content: flex-start;
+    margin-left: 93px;
+    margin-right: 33px;
   }
-}
-
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-  margin-right: 33px;
 }
 
 .site-nav .site-nav__item:not(:last-child) {
@@ -201,8 +202,14 @@ svg {
 }
 
 .contacts {
-  display: flex;
-  justify-content: flex-end;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .contacts-address__link {
@@ -1380,6 +1387,9 @@ svg {
 }
 
 .mobile-menu__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -1392,5 +1402,9 @@ svg {
   .mobile-menu__btn {
     display: none;
   }
+}
+
+.menu-btn__icon {
+  fill: #000;
 }
 /*# sourceMappingURL=main.css.map */

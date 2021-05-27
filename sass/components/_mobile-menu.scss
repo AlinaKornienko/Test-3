@@ -1,4 +1,7 @@
 .mobile-menu__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -8,4 +11,7 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.menu-btn__icon {
+  fill: $primary-black-color;
 }

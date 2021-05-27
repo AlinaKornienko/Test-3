@@ -37,17 +37,18 @@ svg {
 }
 .main-nav {
   @extend %container;
+  display: flex;
+  justify-content: flex-start;
+}
+.site-nav {
+  @extend %list;
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-start;
+    margin-left: 93px;
+    margin-right: 33px;
   }
-}
-.site-nav {
-  @extend %list;
-  display: flex;
-  margin-left: 93px;
-  margin-right: 33px;
 }
 .site-nav .site-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -89,8 +90,11 @@ svg {
 .contacts {
   @extend %container;
   @extend %list;
-  display: flex;
-  justify-content: flex-end;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 .contacts-address__link {
   display: flex;
