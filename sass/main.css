@@ -1417,7 +1417,7 @@ svg {
   fill: #2196f3;
 }
 
-.mobile.container {
+.mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -1430,13 +1430,13 @@ svg {
   z-index: 99;
 }
 
-.mobile.container.is-open {
+.mobile-menu.is-open {
   opacity: 1;
   overflow: hidden;
 }
 
 .mobile-menu__list {
-  margin-bottom: 302px;
+  margin-bottom: 32px;
 }
 
 .mobile-menu__item {
@@ -1513,10 +1513,6 @@ svg {
   .mobile-menu__btn {
     display: none;
   }
-}
-
-.mobile-menu__list.mobile-menu__link.current {
-  color: #2196f3;
 }
 
 .menu-btn__icon {
