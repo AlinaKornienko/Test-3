@@ -794,12 +794,24 @@ svg {
 @media screen and (min-width: 768px) {
   .footer-line__table {
     display: flex;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-line__table {
     display: inline-flex;
+    margin-bottom: 0;
+  }
+}
+
+.address {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    margin-bottom: 0;
   }
 }
 
@@ -807,10 +819,16 @@ svg {
   color: #fff;
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.7;
+}
+
+@media screen and (min-width: 1200px) {
+  .address__text {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {
@@ -853,6 +871,16 @@ svg {
   line-height: 1.14;
   text-transform: uppercase;
   color: #fff;
+}
+
+.footer-social-icons {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social-icons {
+    margin-bottom: 0;
+  }
 }
 
 .footer-social-icons__svg {
@@ -923,13 +951,19 @@ svg {
 }
 
 .footer-form__title {
-  margin-top: 8px;
+  margin-top: 0;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__title {
+    margin-top: 8px;
+  }
 }
 
 .footer-form__field {
