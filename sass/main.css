@@ -225,8 +225,6 @@ svg {
 
 .contacts-address__link {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -234,7 +232,14 @@ svg {
   letter-spacing: 0.02em;
   text-decoration: none;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-address__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts-address__link {
@@ -247,11 +252,13 @@ svg {
 
 .contacts-address:not(:last-child) {
   margin-right: 0;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
   .contacts-address:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -1359,7 +1366,22 @@ svg {
 }
 
 .modal-form__confirm {
-  display: inline-block;
+  display: contents;
+  align-items: end;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form__confirm {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__confirm {
+    display: inline-block;
+  }
 }
 
 .modal-form__label {
@@ -1396,6 +1418,15 @@ svg {
 .modal-form__checkbox {
   position: relative;
   margin-bottom: 30px;
+  width: 370px;
+  text-align: end;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox {
+    display: initial;
+    width: 448px;
+  }
 }
 
 .modal {
@@ -1413,10 +1444,17 @@ svg {
 
 .modal__label-confirm {
   margin-bottom: 0;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: #757575;
-  margin-left: 35px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__label-confirm {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-left: 20px;
+  }
 }
 
 .modal__label-confirm::before {
@@ -1428,13 +1466,17 @@ svg {
   width: 16px;
   height: 16px;
   border-radius: 3px;
-  margin-right: 7px;
-  margin-left: 12px;
   background-image: url(/images/icons/Vector-2.svg);
   color: #212121;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__label-confirm::before {
+    margin-right: 7px;
+  }
 }
 
 .modal__checkbox-link {
@@ -1445,13 +1487,14 @@ svg {
 .modal__checkbox {
   appearance: none;
   position: absolute;
+  opacity: 0;
 }
 
 .modal__checkbox:checked + .modal__label-confirm::before {
   background-image: url(/images/icons/Checked.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 11px 8px;
+  background-size: 11px 11px;
   background-color: #2196f3;
 }
 
@@ -1498,6 +1541,7 @@ svg {
 .modal__button {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .modal__button-submit {
