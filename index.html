@@ -59,7 +59,12 @@
               >
             </li>
           </ul>
-          <button class="mobile-menu__btn" data-menu-button>
+          <button
+            class="mobile-menu__btn"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
             <svg class="menu-btn__icon" width="40" height="40">
               <use
                 class="menu-btn__icon-close"
@@ -74,68 +79,70 @@
         </div>
       </div>
     </header>
-    <div class="-mobile-menu" data-menu>
-      <ul class="mobile-menu__list list">
-        <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link current">Студия</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link">Контакты</a>
-        </li>
-      </ul>
-      <ul class="mobile-menu__contacts list">
-        <li class="mobile-contacts__address">
-          <a class="mobile-contacts__link" href="tel:+380961111111">
-            +38 096 111 11 11</a
-          >
-        </li>
-        <li class="mobile-contacts__address">
-          <a class="mobile-contacts__link-2" href="mailto:info@devstudio.com">
-            info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-menu__socials list">
-        <li class="mobile-socials__item">
-          <a
-            class="mobile-socials__link"
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Instagram</a
-          >
-        </li>
-        <li class="mobile-socials__item">
-          <a
-            class="mobile-socials__link"
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Twitter</a
-          >
-        </li>
-        <li class="mobile-socials__item">
-          <a
-            class="mobile-socials__link"
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Facebook</a
-          >
-        </li>
-        <li class="mobile-socials__item">
-          <a
-            class="mobile-socials__link"
-            href="https://www.linkedIn.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-        </li>
-      </ul>
+    <div class="mobile-menu" id="menu-container" data-menu>
+      <div class="mobile-container">
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link current">Студия</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__contacts list">
+          <li class="mobile-contacts__address">
+            <a class="mobile-contacts__link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__address">
+            <a class="mobile-contacts__link-2" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__socials list">
+          <li class="mobile-socials__item">
+            <a
+              class="mobile-socials__link"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-socials__item">
+            <a
+              class="mobile-socials__link"
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-socials__item">
+            <a
+              class="mobile-socials__link"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-socials__item">
+            <a
+              class="mobile-socials__link"
+              href="https://www.linkedIn.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
     <main>
       <!-- <div class="-mobile-menu">
@@ -662,15 +669,15 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-line">
         <div class="footer__address">
           <a class="footer__logo" href="./index.html"
             ><span class="logo-first">Web</span
             ><span class="logo-second-footer">Studio</span></a
-          > -->
-    <!--contacts-->
-    <!-- <address class="address">
+          >
+          <!--contacts-->
+          <address class="address">
             <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="address__scroll list">
               <li class="address__item">
@@ -763,7 +770,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="button-close">

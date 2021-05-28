@@ -1456,6 +1456,12 @@ svg {
   margin-bottom: 64px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .mobile-contacts__link {
   text-decoration: none;
   font-weight: 500;
@@ -1479,6 +1485,12 @@ svg {
   margin-bottom: 32px;
 }
 
+.mobile-container {
+  display: flex;
+  padding: 48px 40px;
+  height: 100%;
+}
+
 .mobile-socials__link {
   text-decoration: none;
   font-weight: 500;
@@ -1498,7 +1510,6 @@ svg {
 }
 
 .mobile-menu__btn {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
