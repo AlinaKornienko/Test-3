@@ -1,10 +1,5 @@
 .cards {
-  // @media screen and (min-width: 768px) {
-  //   flex-basis: calc((100% - 2 * 15px) / 2);
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   flex-basis: calc((100% - 3 * 15px) / 3);
-  // }
+  display: flex;
   &__title {
     color: $title-text-color;
     font-weight: 700;
@@ -163,9 +158,11 @@
   &.biger {
     @media screen and (min-width: 768px) {
       height: 146px;
+      display: block;
     }
     @media screen and (min-width: 1200px) {
       height: auto;
+      display: block;
     }
   }
 }

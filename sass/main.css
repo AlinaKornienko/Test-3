@@ -1081,6 +1081,10 @@ svg {
   padding-bottom: auto;
 }
 
+.cards {
+  display: flex;
+}
+
 .cards__title {
   color: #212121;
   font-weight: 700;
@@ -1293,12 +1297,14 @@ svg {
 @media screen and (min-width: 768px) {
   .box.biger {
     height: 146px;
+    display: block;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .box.biger {
     height: auto;
+    display: block;
   }
 }
 
