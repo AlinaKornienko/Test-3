@@ -1642,6 +1642,7 @@ svg {
 
 .mobile-menu.is-open {
   opacity: 1;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
