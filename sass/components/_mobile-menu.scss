@@ -1,8 +1,8 @@
 .mobile-menu {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  display: none;
+  top: 100%;
   left: 0;
-  opacity: 0;
   width: 100%;
   height: 100vh;
   padding: 48px 40px;
@@ -11,8 +11,7 @@
   z-index: 99;
 
   &.is-open {
-    opacity: 1;
-    overflow: hidden;
+    display: block;
   }
   &__list {
     @extend %list;
@@ -90,7 +89,6 @@
     display: flex;
   }
   &__btn {
-    // display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
@@ -104,9 +102,6 @@
     }
   }
 }
-// .mobile-menu__list.mobile-menu__link.current {
-//   color: $accent-color;
-// }
 .menu-btn__icon {
   fill: $primary-black-color;
 }

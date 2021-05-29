@@ -160,6 +160,14 @@
   border-right: 1px solid rgba(238, 238, 238, 1);
   box-sizing: border-box;
   padding: 20px 24px;
+  &.biger {
+    @media screen and (min-width: 768px) {
+      height: 146px;
+    }
+    @media screen and (min-width: 1200px) {
+      height: auto;
+    }
+  }
 }
 .filter__button {
   @extend %button;

@@ -79,8 +79,8 @@
         </div>
       </div>
     </header>
-    <!-- <div class="mobile-menu" id="menu-container" data-menu>
-      <div class="mobile-container">
+    <div class="-mobile-menu" data-menu>
+      <div class="mobile container">
         <ul class="mobile-menu__list list">
           <li class="mobile-menu__item">
             <a href="" class="mobile-menu__link current">Студия</a>
@@ -143,7 +143,7 @@
           </li>
         </ul>
       </div>
-    </div> -->
+    </div>
     <main>
       <!-- <div class="-mobile-menu">
         <div class="mobile container">
@@ -317,31 +317,61 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="employments__tasks list">
             <li class="employments__item">
-              <img
-                src="./images/main-page/box-1.jpg"
-                alt="Иллюстрация верстки"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main-page/desktop/box-1.jpg   1x,
+                    ./images/main-page/desktop/box-1@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/main-page/desktop/box-1.jpg"
+                  alt="Иллюстрация верстки"
+                  width="450"
+                />
+              </picture>
               <div class="employments__about">
                 <p class="employments__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="employments__item">
-              <img
-                src="./images/main-page/box-2.jpg"
-                alt="Иллюстрация мобильного приложения"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main-page/desktop/box-2.jpg   1x,
+                    ./images/main-page/desktop/box-2@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/main-page/desktop/box-2.jpg"
+                  alt="Мобильные приложения"
+                  width="450"
+                />
+              </picture>
               <div class="employments__about">
                 <p class="employments__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="employments__item">
-              <img
-                src="./images/main-page/box-3.jpg"
-                alt="Иллюстрация применения стилей"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main-page/desktop/box-3.jpg   1x,
+                    ./images/main-page/desktop/box-3@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/main-page/desktop/box-3.jpg"
+                  alt="Дизайн"
+                  width="450"
+                />
+              </picture>
               <div class="employments__about">
                 <p class="employments__text">Дизайнерские решения</p>
               </div>
@@ -355,7 +385,37 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__scroll list">
             <li class="team__item">
-              <img src="./images/main-page/img.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main-page/desktop/img.jpg   1x,
+                    ./images/main-page/desktop/img@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/main-page/tablet/img.jpg   1x,
+                    ./images/main-page/tablet/img@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/main-page/mobile/img.jpg   1x,
+                    ./images/main-page/mobile/img@2.jpg 2x
+                  "
+                  media="(max-width:480px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/main-page/mobile/img.jpg"
+                  alt=""
+                  width="450"
+                />
+              </picture>
               <div class="team__about">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -420,7 +480,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/main-page/img-2.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main-page/desktop/img-2.jpg   1x,
+                    ./images/main-page/desktop/img-2@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/main-page/tablet/img-2.jpg   1x,
+                    ./images/main-page/tablet/img-2@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/main-page/mobile/img-2.jpg   1x,
+                    ./images/main-page/mobile/img-2@2.jpg 2x
+                  "
+                  media="(max-width:480px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/main-page/mobile/img-2.jpg"
+                  alt=""
+                  width="450"
+                />
+              </picture>
               <div class="team__about">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -485,7 +575,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/main-page/img-3.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main-page/desktop/img-3.jpg   1x,
+                    ./images/main-page/desktop/img-3@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/main-page/tablet/img-3.jpg   1x,
+                    ./images/main-page/tablet/img-3@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/main-page/mobile/img-3.jpg   1x,
+                    ./images/main-page/mobile/img-3@2.jpg 2x
+                  "
+                  media="(max-width:480px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/main-page/mobile/img-3.jpg"
+                  alt=""
+                  width="450"
+                />
+              </picture>
               <div class="team__about">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -550,7 +670,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/main-page/img-4.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main-page/desktop/img-4.jpg   1x,
+                    ./images/main-page/desktop/img-4@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/main-page/tablet/img-4.jpg   1x,
+                    ./images/main-page/tablet/img-4@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/main-page/mobile/img-4.jpg   1x,
+                    ./images/main-page/mobile/img-4@2.jpg 2x
+                  "
+                  media="(max-width:480px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/main-page/mobile/img-4.jpg"
+                  alt=""
+                  width="450"
+                />
+              </picture>
               <div class="team__about">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
